@@ -12,11 +12,17 @@ namespace YearMyProject
                 mydate.Day = 31;
                 mydate.Year = 2001;
                 Console.WriteLine("Day of year {0}", mydate.DayOfYear);
+                DatePlus datePlus1 = new DatePlus(2022,3,1);
+                DatePlus datePlus2 = new DatePlus(2022,1,1);
+                Console.WriteLine(datePlus1 - datePlus2);
+                Console.WriteLine(datePlus1.ToString());
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
+            
         }
     }
     class Date

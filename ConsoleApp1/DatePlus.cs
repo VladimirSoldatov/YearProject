@@ -20,7 +20,7 @@ namespace YearMyProject
         }
         public override string ToString()
         {
-            string[] str = { "Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря" };
+            string[] str = { "января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря" };
             return String.Format("{0} {1} {2}", Day, str[Month - 1], Year);
         }
         public static int operator-(DatePlus obj1, DatePlus obj2)
